@@ -1,0 +1,25 @@
+@mixin centerItems(){
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.section-1{
+  background: url("../img/banner.jpeg") no-repeat fixed center;
+  background-size: cover;
+  height:600px;
+  position:relative !important;
+  text-align:center;
+  text-shadow:1px 1px 1px 1px $text-color-light;
+  color:$text-color-dark;
+
+  div{
+    @include centerItems();
+}
+
+h1{
+  font-size:100px !important;
+  font-variant: small-caps;
+}
+}
